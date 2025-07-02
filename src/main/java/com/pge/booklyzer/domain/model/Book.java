@@ -19,13 +19,20 @@ import java.util.UUID;
 public class Book {
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
+
   private UUID id;
+
+  @Column(unique = true)
   private String title;
+
   @ManyToOne(optional = false)
   @JoinColumn(name = "author_id")
   private Author author;
+
   @ISBN
+  @Column(unique = true)
   private String isbn;
+
   @Column(nullable = false)
   @Min(0)
   private Integer availableQuantity;

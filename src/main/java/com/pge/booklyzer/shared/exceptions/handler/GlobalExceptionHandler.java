@@ -3,6 +3,7 @@ package com.pge.booklyzer.shared.exceptions.handler;
 import com.pge.booklyzer.domain.exception.DomainException;
 import com.pge.booklyzer.shared.exceptions.BadRequestException;
 import com.pge.booklyzer.shared.exceptions.NotFoundException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.*;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.AuthenticationException;
@@ -43,6 +44,27 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
             extractPath(request),
             validationErrors);
 
+    return ResponseEntity.badRequest().body(error);
+  }
+
+
+  @ExceptionHandler(DataIntegrityViolationException.class)
+  public ResponseEntity<ApiError> handleDataIntegrityViolationException(DataIntegrityViolationException ex, WebRequest request) {
+    String message = "Violação de integridade de dados.";
+
+    if (ex.getCause() != null && ex.getCause().getMessage() != null) {
+      String causeMessage = ex.getCause().getMessage();
+      if (causeMessage.contains("duplicate key") || causeMessage.contains("violates unique constraint")) {
+        message = "Já existe um registro com esse valor.";
+      }
+    }
+
+    ApiError error = new ApiError(
+      HttpStatus.BAD_REQUEST.value(),
+      message,
+      LocalDateTime.now(),
+      extractPath(request)
+    );
     return ResponseEntity.badRequest().body(error);
   }
 
