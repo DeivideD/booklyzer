@@ -25,14 +25,14 @@ INSERT INTO public.books (id, available_quantity, isbn, title, author_id) VALUES
 
 
 INSERT INTO public.users (id, email, name, password, registration) VALUES
-('1a2b3c4d-1111-4aa1-8890-fb54a431a111', 'alice@example.com', 'Alice Johnson', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG001'),
-('1a2b3c4d-2222-4aa2-8890-fb54a431a222', 'bob@example.com', 'Bob Smith', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG002'),
-('1a2b3c4d-3333-4aa3-8890-fb54a431a333', 'carla@example.com', 'Carla Mendes', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG003'),
-('1a2b3c4d-4444-4aa4-8890-fb54a431a444', 'daniel@example.com', 'Daniel Souza', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG004'),
-('1a2b3c4d-5555-4aa5-8890-fb54a431a555', 'emily@example.com', 'Emily Davis', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG005'),
-('1a2b3c4d-6666-4aa6-8890-fb54a431a666', 'fabio@example.com', 'Fábio Lima', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG006'),
-('1a2b3c4d-7777-4aa7-8890-fb54a431a777', 'giovanna@example.com', 'Giovanna Rocha', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG007'),
-('1a2b3c4d-8888-4aa8-8890-fb54a431a888', 'henrique@example.com', 'Henrique Silva', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG008'),
-('1a2b3c4d-9999-4aa9-8890-fb54a431a999', 'isabela@example.com', 'Isabela Monteiro', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG009'),
-('1a2b3c4d-aaaa-4aaa-8890-fb54a431aaaa', 'joao@example.com', 'João Pedro', '$2a$10$N9qo8uLOickgx2ZMRZoMy.MrYV9ZRwUuml6uY/4Wr6l2XoVYlF1Kq', 'REG010');
+('1a2b3c4d-1111-4aa1-8890-fb54a431a111', 'alice@example.com', 'Alice Johnson', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG001'),
+('1a2b3c4d-2222-4aa2-8890-fb54a431a222', 'bob@example.com', 'Bob Smith', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG002'),
+('1a2b3c4d-3333-4aa3-8890-fb54a431a333', 'carla@example.com', 'Carla Mendes', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG003'),
+('1a2b3c4d-4444-4aa4-8890-fb54a431a444', 'daniel@example.com', 'Daniel Souza', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG004'),
+('1a2b3c4d-5555-4aa5-8890-fb54a431a555', 'emily@example.com', 'Emily Davis', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG005'),
+('1a2b3c4d-6666-4aa6-8890-fb54a431a666', 'fabio@example.com', 'Fábio Lima', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG006'),
+('1a2b3c4d-7777-4aa7-8890-fb54a431a777', 'giovanna@example.com', 'Giovanna Rocha', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG007'),
+('1a2b3c4d-8888-4aa8-8890-fb54a431a888', 'henrique@example.com', 'Henrique Silva', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG008'),
+('1a2b3c4d-9999-4aa9-8890-fb54a431a999', 'isabela@example.com', 'Isabela Monteiro', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG009'),
+('1a2b3c4d-aaaa-4aaa-8890-fb54a431aaaa', 'joao@example.com', 'João Pedro', '$2a$10$hBO/l.V8y.yGQQaSFfwSFOVxO0XNtCNbE/Xl4oo7Vn.rCkoxjdJxO', 'REG010');
 
