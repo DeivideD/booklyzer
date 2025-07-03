@@ -104,15 +104,6 @@ O arquivo será gerado em:
 target/booklyzer.war
 ```
 
----
-
-## 📝 Contribuindo
-
-Contribuições são muito bem-vindas! 💙  
-Sinta-se livre para abrir **issues** e enviar **pull requests** com melhorias, correções ou novas funcionalidades.
-
----
-
 ## 👨‍💻 Autor
 
 Desenvolvido com 💻 e ☕ por **Deivide Duarte**  
